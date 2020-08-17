@@ -36,7 +36,7 @@ Data summary includes the information about number of documents, words and uniqu
 
 ![length distribution](/images/len_dist.PNG)
 
-**From this graphical information we can select the suitable  length of headlines that we have to use for making every headlines into a same length. **
+**From this graphical information we can select the suitable  length of headlines that we have to use for making every headlines into a same length.**
 
 
 ## Data Preparation for Model Building
@@ -47,5 +47,23 @@ The text data are represented by a encoded sequence where the sequences are the 
 For Model Evaluation the encoded headlines are splitted into **Train-Test-Validation Set**. The distribution has -
 
 ![split](/images/train_test_split.PNG)
+
+
+## Model Development 
+
+The used model architecture consists of a **embedding layer(`input_length = 21, embedding_dim = 64`), GRU layer(`n_units = 64`), two dense layer (`n_units = 24, 6`), a dropout  and a softmax layer**. The Architecture looks like- 
+
+![model](/images/model_architecture.PNG)
+
+## Model Evaluation 
+
+In this simple model we have got **`81%`** validation accuracy which is not bad for such an multiclass imbalanced dataset. Besides Confusion Matrix and other evaluation measures have been taken to determine the effectiveness of the developed model. From the confusion matrix it is observed that the maximum number of misclassified headlines are fall in the caltegory of **`Natinal, International and Politics `** and it make sense because this categories headlines are kind of similar in words. The accuracy, precision, recall and f1-score result also demonstrate this issue. 
+
+![confusion](/images/confusion.PNG)
+
+![performance](/images/performance.PNG)
+
+**In conclusion, we have achieved a good accuracy of `84%` on this simple recurrent neural network for Bengali news headline categorization task. This accuray can be further improved by doing hyperparameter tunning and by employing more shophisticated network architecture with a large dataset.**
+
 
 
