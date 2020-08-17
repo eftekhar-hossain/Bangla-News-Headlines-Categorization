@@ -33,3 +33,19 @@ As the headlines are small in length it is not mandatory to remove the stopwords
 Data summary includes the information about number of documents, words and unique words have in each category class. Also, include the length distribution of the headlines in the dataset.
 
 | ![national](/images/national.PNG) | ![international](/images/international.PNG) | ![politics](/images/politics.PNG) | ![sports](/images/sports.PNG) |![amusement](/images/amusement.PNG) |![it](/images/it.PNG) |
+
+![length distribution](/images/len_dist.PNG)
+
+**From this graphical information we can select the suitable  length of headlines that we have to use for making every headlines into a same length. **
+
+
+## Data Preparation for Model Building
+
+The text data are represented by a encoded sequence where the sequences are the vector of index number of the contains words in each headlines. The categories are also encoded into numeric values. After preparing the headlines and labels it looks as -
+![ecoded_sequence](/images/padded.PNG)  ![labels](/images/encoded_labels.PNG)
+
+For Model Evaluation the encoded headlines are splitted into **Train-Test-Validation Set**. The distribution has -
+
+![split](/images/train_test_split.PNG)
+
+
