@@ -3,7 +3,7 @@
 - A dataset of **`0.13 Million`** news headlines is created. In built chrome web scrapper used for scraping the news headlines from different Bengali online news portals such as **`Dainik Jugantor, Dainik Ittefaq, Dainik Kaler Kontho`** and so on.    
 - **`Word embeeding`** feature represtations technique is used for extracting the semantic meaning of the words.
 - A deep learning model has been built by using a **`bidirectional gated recurrent network`**.
-- Finally, the model performance  evaluated using various evaluation measures such as **`confusion matrix, accuracy , precision, recall and f1-score`**.  
+- Finally, the model performance is evaluated using various evaluation measures such as **`confusion matrix, accuracy , precision, recall and f1-score`**.  
 
 ## Resources Used
 - **Developement Envioronment :** Google Colab
@@ -57,7 +57,7 @@ The used model architecture consists of a **embedding layer(`input_length = 21, 
 
 ## Model Evaluation 
 
-In this simple model we have got **`81%`** validation accuracy which is not bad for such an multiclass imbalanced dataset. Besides Confusion Matrix and other evaluation measures have been taken to determine the effectiveness of the developed model. From the confusion matrix it is observed that the maximum number of misclassified headlines are fall in the caltegory of **`Natinal, International and Politics `** and it make sense because this categories headlines are kind of similar in words. The accuracy, precision, recall and f1-score result also demonstrate this issue. 
+In this simple model we have got **`81%`** validation accuracy which is not bad for such an multiclass imbalanced dataset. Besides Confusion Matrix and other evaluation measures have been taken to determine the effectiveness of the developed model. From the confusion matrix it is observed that the maximum number of misclassified headlines are fall in the caltegory of **`Natinal, International and Politics `** and it makes sense because this categories headlines are kind of similar in words. The accuracy, precision, recall and f1-score result also demonstrate this issue. 
 
 ![confusion](/images/confusion.PNG)
 
